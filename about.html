@@ -1,0 +1,77 @@
+<!--Add accelerator support-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LoopTrail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#087f46">
+    <style>
+    #abt {
+        height: 90%;
+        margin: 100;
+        padding: 100;
+        text-align: center;
+    }
+    a, a:hover {
+      text-decoration: none;
+    }
+    h2 a {
+      color: #000000;
+    }
+    .app-button left a {
+      color: #FFFFFF;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="app-page" data-page="home">
+      <div class="app-topbar">
+        <div class="app-button left menuleft" data-back><a href="index.html">Return</a></div>
+        <div class="app-title">LoopTrail<h1></div>
+      </div>
+    </div>
+  
+
+      <div id="abt">  
+ 
+        <h1>LoopTrail:</h2>
+        <p>Created with the goal of providing accurate public transport data to users.</p>
+
+        <h2>Made using:</h2>
+        <ul>App.js</ul>
+        <ul>Google Maps API</ul>
+
+        <h2> <a href="https://github.com/Toughee/LoopTrail">Github</a></h2>
+
+      </div>
+
+    </div>
+
+    <script src="js/zepto.js"></script>
+    <script src="js/app.min.js"></script>
+    <script>
+      App.controller('home', function (page) {
+        // put stuff here
+      });
+
+      App.controller('page2', function (page) {
+        // put stuff here
+      });
+
+      try {
+        App.restore();
+      } catch (err) {
+        App.load('home');
+      }
+    </script>
+
+  </body>
+</html>
